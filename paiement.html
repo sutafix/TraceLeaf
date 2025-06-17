@@ -1,0 +1,69 @@
+<!-- paiement.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Paiement - TraceLeaf</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .payment-container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #005005;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Paiement sécurisé</h2>
+    <form onsubmit="alert('Paiement fictif effectué. Merci !'); return false;">
+      <label>Nom sur la carte</label>
+      <input type="text" required>
+
+      <label>Numéro de carte</label>
+      <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+      <label>Date d'expiration</label>
+      <input type="text" placeholder="MM/AA" maxlength="5" required>
+
+      <label>CVV</label>
+      <input type="text" maxlength="4" required>
+
+      <button type="submit">Payer 2,99 €</button>
+    </form>
+  </div>
+</body>
+</html>

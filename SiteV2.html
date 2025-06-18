@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TraceLeaf - Analysez votre empreinte carbone numérique</title>
+    <title>TraceLeaf – Suivi de votre empreinte carbone numérique en temps réel</title>
+    <meta name="description" content="TraceLeaf est une application gratuite qui vous aide à analyser et réduire votre empreinte carbone numérique.">
+    <meta name="keywords" content="empreinte carbone, numérique, CO2, application écologique, streaming, mails, IA, écologie numérique, TraceLeaf">
+    <meta name="author" content="Équipe TraceLeaf">
     <style>
         :root {
             --primary: #2e7d32;
@@ -364,15 +367,19 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Trace<span>Leaf</span></div>
-                <ul class="nav-links">
-                    <li><a href="#features">Fonctionnalités</a></li>
-                    <li><a href="#pricing">Tarifs</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="#pricing"  class="btn" onclick="alert('Application en développement, bientôt disponible')">Télécharger</a>
-            </nav>
+  <div class="logo">Trace<span>Leaf</span></div>
+  <div style="display: flex; align-items: center; flex: 1; justify-content: space-between;">
+    <ul class="nav-links" style="display: flex; list-style: none; margin: 0;">
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-buttons" style="display: flex; gap: 10px;">
+      <a href="#about" class="btn btn-outline">À propos</a>
+      <a href="#" class="btn" onclick="alert('Application en développement, bientôt disponible')">Télécharger</a>
+      <a href="soutien.html" class="btn">Nous soutenir</a>
+    </div>
+  </div>
+</nav>
         </div>
     </header>
 
@@ -380,7 +387,7 @@
         <div class="container">
             <h1>Maîtrisez votre empreinte carbone numérique</h1>
             <p>TraceLeaf analyse en temps réel votre consommation d'Internet et calcule les émissions de CO2 associées à vos activités en ligne.</p>
-            <a href="#pricing" class="btn">Essayer gratuitement</a>
+            <a href="#pricing" class="btn"  onclick="alert('Application en développement, bientôt disponible')">Essayer gratuitement</a>
             <div class="hero-image">
                 <!-- Remplacez par une capture d'écran de votre application -->
                 <img src="assets/dashboard.png" alt="Dashboard" style="max-width: 100%; border-radius: 16px;" />
@@ -429,100 +436,42 @@
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-title">
-                <h2>Choisissez votre formule</h2>
-                <p>Commencez gratuitement ou débloquez toutes les fonctionnalités avec notre abonnement premium.</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Gratuit</h3>
-                    <div class="price">0€ <span>/ mois</span></div>
-                    <ul class="pricing-features">
-                        <li>Analyse basique en temps réel</li>
-                        <li>Historique sur 7 jours</li>
-                        <li>Estimation carbone des vidéos</li>
-                        <li>Overlay simplifié</li>
-                        <li>Conseils généraux</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline">Télécharger</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Recommandé</div>
-                    <h3>Premium</h3>
-                    <div class="price">2,99€ <span>/ mois</span></div>
-                    <ul class="pricing-features">
-                        <li>Toutes les fonctionnalités gratuites</li>
-                        <li>Analyse détaillée des emails</li>
-                        <li>Impact des prompts IA</li>
-                        <li>Historique illimité</li>
-                        <li>Overlay avancé</li>
-                        <li>Conseils personnalisés</li>
-                        <li>Export des données</li>
-                        <li>Objectifs personnalisés</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/test_00wfZag9N7lB4zagvWawo00" class="btn">S'abonner</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-title">
-                <h2>Questions fréquentes</h2>
-                <p>Trouvez les réponses aux questions les plus courantes sur TraceLeaf.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Comment TraceLeaf calcule-t-il mon empreinte carbone ?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>TraceLeaf utilise des algorithmes basés sur les dernières recherches scientifiques pour estimer votre empreinte carbone. Nous prenons en compte le type d'activité (streaming, emails, IA), la durée, la qualité des médias et d'autres facteurs pour fournir une estimation la plus précise possible.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>L'application fonctionne-t-elle sur mobile et desktop ?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Actuellement, TraceLeaf est disponible en version desktop pour Windows, Mac et Linux. Une version mobile est prévue pour 2026.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Mes données sont-elles sécurisées ?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Absolument. Nous ne collectons que les données strictement nécessaires à l'analyse de votre empreinte carbone. Toutes les informations sont chiffrées et stockées localement sur votre appareil. Nous ne vendons ni ne partageons vos données avec des tiers.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Puis-je essayer la version premium avant de m'abonner ?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Oui ! Nous offrons une période d'essai de 14 jours pour la version premium. Aucune carte bancaire n'est requise pour commencer l'essai.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Comment puis-je annuler mon abonnement premium ?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de l'application ou en nous contactant par email. L'annulation prend effet à la fin de la période de facturation en cours.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <footer id="contact">
+    
+<section class="features" id="engagement">
+  <div class="container">
+    <div class="section-title">
+      <h2>Notre engagement</h2>
+      <p>TraceLeaf est conçu avec une approche respectueuse de votre vie privée et de l’environnement.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Respect de la vie privée</h3>
+        <p>Vos données restent sur votre appareil. Aucune information n'est partagée ni revendue.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Impact écologique</h3>
+        <p>Nous développons TraceLeaf dans une logique écoresponsable, en limitant notre propre empreinte numérique.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>Qui sommes-nous ?</h2>
+      <p>Nous sommes trois étudiants en école d’ingénieurs passionnés par les enjeux numériques et écologiques. TraceLeaf est notre projet pour un web plus responsable.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -533,9 +482,7 @@
                     <h3>Liens utiles</h3>
                     <ul class="footer-links">
                         <li><a href="#features">Fonctionnalités</a></li>
-                        <li><a href="#pricing">Tarifs</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Télécharger</a></li>
+                        <li><a href="#"  onclick="alert('Application en développement, bientôt disponible')">Télécharger</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -556,7 +503,9 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 TraceLeaf. Tous droits réservés.</p>
+                <p>TraceLeaf est une application gratuite, conçue avec une vision éthique et écologique. 
+    Vous pouvez <a href="https://buy.stripe.com/test_00wfZag9N7lB4zagvWawo00">nous soutenir</a> si vous le souhaitez 🙏</p>
+    <p>&copy; 2025 TraceLeaf. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

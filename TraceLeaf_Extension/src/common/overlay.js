@@ -1,4 +1,3 @@
-    // common/overlay.js
 export function createOverlay() {
   if (document.getElementById("traceleaf-co2-wrapper")) {
     return document.getElementById("traceleaf-co2");
@@ -22,17 +21,9 @@ export function createOverlay() {
   overlay.style.fontFamily = "Arial, sans-serif";
   overlay.style.transition = "opacity 0.3s ease";
   overlay.style.opacity = "8";
-  overlay.style.pointerEvents = "auto";
+  overlay.style.pointerEvents = "none";
 
-  overlay.addEventListener("mouseenter", () => {
-    overlay.style.opacity = "0.3";
-    overlay.style.pointerEvents = "none";
-  });
 
-  overlay.addEventListener("mouseleave", () => {
-    overlay.style.opacity = "8";
-    overlay.style.pointerEvents = "auto";
-  });
 
   wrapper.appendChild(overlay);
   document.body.appendChild(wrapper);

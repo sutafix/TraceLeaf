@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "TraceLeaf Extension",
   "version": "1.0",
   "description": "Extension pour calcul CO2",
@@ -7,20 +7,13 @@
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
-      "js": ["common/overlay.js", "common/co2-calculator.js", "sites/youtube.js"]
+      "js": ["dist/youtube.bundle.js"]
     },
     {
       "matches": ["*://www.twitch.tv/*"],
-      "js": ["common/overlay.js", "common/co2-calculator.js", "sites/twitch.js"]
-    },
-    {
-      "matches": ["*://mail.google.com/*"],
-      "js": ["common/overlay.js", "common/co2-calculator.js", "sites/gmail.js"]
-    },
-    {
-      "matches": ["*://chat.openai.com/*"],
-      "js": ["common/overlay.js", "common/co2-calculator.js", "sites/openai.js"]
+      "js": ["dist/twitch.bundle.js"]
     }
+  
   ]
 }
 

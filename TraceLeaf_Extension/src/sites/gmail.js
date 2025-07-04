@@ -1,7 +1,5 @@
 // sites/gmail.js
-import { createOverlay } from "../common/overlay.js";
-import { sendSessionData } from "../common/api.js";
-import { getDomain } from "../common/utils.js";
+import { createOverlay } from '../common/overlay';
 
 console.log("[TraceLeaf] 📬 Gmail tracker actif");
 
@@ -11,7 +9,7 @@ function estimateEmailCO2(hasAttachment) {
 }
 
 function parseInbox() {
-  const mails = [...document.querySelectorAll("tr.zA")]; // Gmail rows
+  const mails = [...document.querySelectorAll("tr.zA")].slice(0,100); // Gmail rows
   let count = 0;
   let totalCO2 = 0;
   for (const mailRow of mails) {

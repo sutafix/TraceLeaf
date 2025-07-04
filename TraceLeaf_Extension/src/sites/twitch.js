@@ -1,7 +1,5 @@
 // sites/twitch.js
-import { createOverlay } from "../common/overlay.js";
-import { sendSessionData } from "../common/api.js";
-import { getDomain } from "../common/utils.js";
+import { createOverlay } from '../common/overlay';
 
 console.log("[TraceLeaf] 🧪 Twitch tracker actif");
 
@@ -54,6 +52,17 @@ function setupVideoTracking() {
   console.log("[TraceLeaf] 🎥 Vidéo Twitch détectée");
   video.__traceleaf_initialized = true;
   overlay = createOverlay();
+  
+  document.addEventListener("fullscreenchange", () => {
+  const fullscreenElement = document.fullscreenElement;
+    if (fullscreenElement) {
+      console.log("[TraceLeaf] 🖥️ Mode plein écran détecté");
+      fullscreenElement.appendChild(overlay.parentNode);
+    } else {
+      console.log("[TraceLeaf] 🖥️ Retour au mode normal");
+      document.body.appendChild(overlay.parentNode);
+    }
+  });
 
   isPlaying = !video.paused;
   video.addEventListener("play", () => {

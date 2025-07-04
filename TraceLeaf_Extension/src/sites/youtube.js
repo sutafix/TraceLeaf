@@ -1,5 +1,5 @@
 // sites/youtube.js
-import { createOverlay } from "../common/overlay.js";
+import { createOverlay } from '../common/overlay';
 
 console.log("[TraceLeaf] 🧪 YouTube tracker actif");
 
